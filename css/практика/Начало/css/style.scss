@@ -1,0 +1,239 @@
+@import "Null.scss";
+//шрифт
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+%con{
+	color: #fff;
+    width: 200px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	flex-basis: 350px;
+	margin: 5px;
+	justify-content: center;
+}
+
+.block-row{
+	width: 90%;
+	border: 5px solid rgb(243, 183, 17);
+	height: 800px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.block-row__column{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: #fff;
+    align-content: flex-start;
+	
+}
+
+.block-row__item1{
+	background-color: rgb(255, 6, 6);
+	@extend %con;
+	order: 5;
+}
+
+
+.block-row__item2{
+	@extend %con;
+	background-color:rgb(243, 183, 17);
+	order: 2;
+}
+
+.block-row__item3{
+	@extend %con;
+	background-color:rgb(89, 243, 17);
+	order: 3;
+}
+.block-row__item{
+	@extend %con;
+	background-color:rgb(17, 89, 243);
+	order: 4;
+}
+
+
+
+
+
+
+
+
+body{
+	font-size: 14px;
+	font-family: 'arial';
+	font-weight: 900;
+	font-style: italic;
+	font-style: oblique;
+	text-align: center;
+	text-align: left;
+	text-align: right;
+	text-shadow: 1px 1px 1px #000;
+	text-decoration: line-through;
+	text-decoration: underline;
+	text-decoration: overline;
+	text-decoration: none;
+	text-transform: capitalize;
+	text-transform: uppercase;
+	text-transform: lowercase;
+	text-indent: 200px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	line-height: 20px;
+	white-space: nowrap;
+	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	width: 700px;
+	height: 700px;
+	min-width: 300px;
+	max-width: 600px;
+	min-height: 300px;
+	max-height: 700px;
+	overflow: visible;
+	overflow: hidden;
+	overflow: scroll;
+	overflow: auto;
+	display: block;
+	display: inline;
+	display: inline-block;
+	display: flex;
+	display: inline-flex;
+	justify-content: center;
+	justify-content: flex-start;
+	justify-content: flex-end;
+	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: baseline;
+	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+	align-self: center;
+	align-self: flex-start;
+	flex-basis: 200px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex: 1 0 200px;
+	align-content: space-between;
+	align-content: space-around;
+	flex-direction: column-reverse;
+	border: 1px solid #000;
+	border: 1px dotted #000;
+	border: 1px dashed #000;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 1px 1px 1px 1px #000;
+	outline: 1px solid #000;
+	outline: 1px dotted #000;
+	outline: 1px dashed #000;
+	opacity: 0;
+	opacity: 1;
+	opacity: 0.5;
+	visibility: hidden;
+	background: #000;
+	background: url('../img/delete.png') left top/contain round local;
+	position: static;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 99;
+	position: absolute;
+	position: fixed;
+	position: sticky;
+	position: relative;
+	position: relative;
+	position: relative;
+}
+
+
+
+
+.block:hover{
+	color: yellow;
+}
+
+
+.block:active{
+	color: red;
+}
+
+
+.block:visited{
+	color: goldenrod
+}
+
+
+.block:focus{
+	color: green;
+}
+
+
+.block p:first-child{
+	color: red;
+}
+
+.block p:last-child{
+    color: green;
+}
+
+.block p:nth-child(2){
+	color: yellow;
+}
+
+
+.block p:first-line{
+	color: green;
+}
+
+.block p:first-letter{
+	color: yellow;
+}
+
+
+.block:before{
+	content: '';
+	display: flex;
+	width: 200px;
+	height: 50px;
+}
+
+.block:after{
+	content: '';
+	display: flex;
+	width: 50px;
+	height: $f;
+	@extend %bor;
+	@include font(green,299px);
+	@include font(green,299px);
+}
+
+
+$f: 90px;
+
+%bor{
+	color: red;
+	background: red;
+}
+
+@mixin font($c,$f){
+	color: $c;
+	font-size: $f;
+}
+
+//content
+
+
+@font-face{
+	font-family: 'arial';
+	 display: swap;
+	src: url('../fonts/Roboto.zip');
+	font-style: italic;
+	font-weight: 700;
+}

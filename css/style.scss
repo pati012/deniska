@@ -1,0 +1,70 @@
+@import 'Null.scss';
+
+
+
+
+.info-swiper{
+	width: 100%;
+	background-color: #273720;
+	height: 912px;
+	padding-top: 7.4375rem;
+}
+
+.info-swiper__title{
+	font-size: 4.5rem;
+	line-height: 1.1111em;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1;
+	margin-bottom: 0.805em;
+}
+
+.swiper__item{
+	background-color: #D2EBD5;
+	border-radius: 2.5rem;
+	text-align: center;
+    max-width: 864px;
+    max-height: 448px;
+	min-width: 432px;
+    min-height: 224px;
+	padding-bottom: 2.75rem;
+}
+
+.swiper__logo{
+	margin-bottom: 1.9375rem;
+	padding-top: 2.75rem;
+}
+
+.swiper__text{
+	font-size: 2rem;
+	line-height: 1.1875em;
+	color: #273720;
+	text-align: center;
+	margin-bottom: 2.0625em;
+	padding: 0rem 5.12rem;
+}
+
+.swiper__footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper__icon{
+	margin-right: 1.5rem;
+}
+
+.swiper__info-person{
+	font-size: 1.125rem;
+	line-height: 1.388em;
+	color: #273720;
+}
+
+.swiper__container{
+	display: block;
+	
+}
+
+.swiper{
+	width: 100%;
+}
